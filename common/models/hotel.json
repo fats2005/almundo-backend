@@ -1,0 +1,49 @@
+{
+  "name": "Hotel",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options":
+  {
+    "validateUpsert": true
+  },
+  "properties":
+  {
+    "id_old":
+    {
+      "type": "string"
+    },
+    "name":
+    {
+      "type": "string",
+      "required": true
+    },
+    "stars":
+    {
+      "type": "number",
+      "required": true,
+      "default": 3
+    },
+    "price":
+    {
+      "type": "number",
+      "required": true
+    },
+    "image":
+    {
+      "type": "string",
+      "required": true
+    },
+    "amenities":
+    {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations":
+  {},
+  "acls": [],
+  "methods":
+  {}
+}
